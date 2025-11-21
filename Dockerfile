@@ -31,7 +31,7 @@ RUN cd /tmp && \
     git clone --depth 1 https://github.com/libjpeg-turbo/libjpeg-turbo.git && \
     cd libjpeg-turbo && mkdir build && cd build && \
     cmake -D CMAKE_INSTALL_PREFIX=/usr .. && \
-    make turbojpeg-static && cp libturbojpeg.a /usr/lib && cp ../turbojpeg.h /usr/include
+    make turbojpeg-static && cp libturbojpeg.a /usr/lib && cp ../src/turbojpeg.h /usr/include
 RUN cd tmp && \
     git clone --depth 1 https://chromium.googlesource.com/libyuv/libyuv && \
     cd libyuv &&\
